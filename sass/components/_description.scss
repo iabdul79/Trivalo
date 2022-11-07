@@ -1,0 +1,55 @@
+.description {
+  &__text:not(:last-of-type) {
+    margin-bottom: 2rem;
+  }
+}
+
+.list {
+  border-top: var(--bottom-border);
+  border-bottom: var(--bottom-border);
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 3rem 0;
+  padding: 3rem 0;
+
+  &__item {
+    flex: 0 0 50%;
+    margin-bottom: .7rem;
+  }
+
+  &__item::before {
+    -webkit-mask-image: url(../img/chevron-thin-right.svg);
+    -webkit-mask-size: cover;
+    background-color: var(--color-primary);
+    content: "";
+    display: inline-block;
+    height: 1rem;
+    margin-right: .7rem;
+    mask-image: url(../img/chevron-thin-right.svg);
+    mask-size: cover;
+    width: 1rem;
+  }
+}
+
+.recommend {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__text {
+    font-size: 1.3rem;
+    color: var(--color-grey-dark-3);
+  }
+
+  &__photo {
+    border: .3rem solid #fff;
+    border-radius: 50%;
+    box-sizing: content-box;
+    height: 4rem;
+    width: 4rem;
+    &:not(:last-child) {
+      margin-right: -1.3rem;
+    }
+  }
+}

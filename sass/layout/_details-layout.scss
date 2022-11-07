@@ -1,0 +1,20 @@
+.details {
+  background-color: var(--color-grey-light-1);
+  border-bottom: var(--bottom-border);
+  display: flex;
+  font-size: 1.4rem;
+  padding: 4.5rem;
+}
+
+.description {
+  box-shadow: var(--shadow-light);
+  flex: 0 0 60%;
+  font-size: inherit;
+  margin-right: 4.5rem;
+  padding: 3rem;
+}
+
+.user-reviews {
+  font-size: inherit;
+  flex: 1;
+}
